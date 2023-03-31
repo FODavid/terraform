@@ -5,7 +5,7 @@ resource "aws_instance" "example" {
     instance_type = "t2.micro"
 
     tags = {
-        Name = "threedemoinstance"
+        Name = "threedemoinstance-${count.index}"
     }
   
 }
